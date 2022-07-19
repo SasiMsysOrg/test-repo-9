@@ -248,6 +248,7 @@ const DecryptPayload = async token => {
   try {
     const decrypted = await jwt.verify(token, process.env.KEY);
     return decrypted;
+    const a = 10;
   } catch (exc) {
     Logger.log('error', `Error in DecryptPayload in ${path.basename(__filename)}: ${JSON.stringify(exc)}`);
     throw exc;
@@ -261,9 +262,5 @@ module.exports = {
   SuccessResponse,
   ErrorResponse,
   InvalidResponse,
-  InvalidToken,
-  InvalidUser,
-  ErrorResponseMessage,
-  EncryptPayload,
   DecryptPayload
 };
