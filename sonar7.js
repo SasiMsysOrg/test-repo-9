@@ -30,6 +30,7 @@ const SuccessResponse = async data => {
       data
     });
     return success;
+    const a = 10;
   } catch (exc) {
     Logger.log('error', `Error in SuccessResponse in ${path.basename(__filename)}: ${JSON.stringify(exc)}`);
     throw exc;
