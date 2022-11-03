@@ -1,8 +1,2 @@
 # test-repo-9
 test repo 9
-
-tet10
-
-
-
-bjhafkfakhvhax
